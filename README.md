@@ -30,11 +30,10 @@ Para compilar o programa, você pode usar um compilador C compatível com o ambi
 gcc -o remote_command_client remote_command_client.c -lws2_32
 Em seguida, execute o programa:
 
-sh
+
 Copy code
 remote_command_client.exe
-Demonstração
-Veja a demonstração do funcionamento do Backdoor aqui.
+
 
 Notas
 Este é um exemplo educacional e deve ser usado com cuidado. A execução remota de comandos pode representar um risco de segurança.
