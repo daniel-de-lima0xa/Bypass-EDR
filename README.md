@@ -31,13 +31,5 @@ gcc -o remote_command_client remote_command_client.c -lws2_32
 Em seguida, execute o programa:
 
 
-Copy code
-remote_command_client.exe
-
-
-Notas
-Este é um exemplo educacional e deve ser usado com cuidado. A execução remota de comandos pode representar um risco de segurança.
-O Backdoor pode ser modificado para aceitar comandos de entrada do usuário e enviar esses comandos para execução remota no servidor.
-
 
 
