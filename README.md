@@ -1,10 +1,10 @@
 # Remote Command Execution Client
 
-Este é um programa cliente em C que permite a execução remota de comandos em um servidor através de uma conexão TCP.
+Este é um Backdoor cliente em C que permite a execução remota de comandos em um servidor através de uma conexão TCP.
 
 ## Descrição
 
-O programa utiliza a API do Windows Socket (Winsock) para estabelecer uma conexão TCP com um servidor remoto e executa o comando `cmd.exe` no servidor. Ele também aplica uma operação XOR nos dados antes de enviá-los para ofuscar a comunicação.
+O Backdoor utiliza a API do Windows Socket (Winsock) para estabelecer uma conexão TCP com um servidor remoto e executa o comando `cmd.exe` no servidor. Ele também aplica uma operação XOR nos dados antes de enviá-los para ofuscar a comunicação.
 
 ## Funcionalidades Principais
 
@@ -34,11 +34,11 @@ sh
 Copy code
 remote_command_client.exe
 Demonstração
-Veja a demonstração do funcionamento do programa aqui.
+Veja a demonstração do funcionamento do Backdoor aqui.
 
 Notas
 Este é um exemplo educacional e deve ser usado com cuidado. A execução remota de comandos pode representar um risco de segurança.
-O programa pode ser modificado para aceitar comandos de entrada do usuário e enviar esses comandos para execução remota no servidor.
+O Backdoor pode ser modificado para aceitar comandos de entrada do usuário e enviar esses comandos para execução remota no servidor.
 
 
 
