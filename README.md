@@ -1,35 +1,31 @@
 # Remote Command Execution Client
 
-Este é um Backdoor cliente em C que permite a execução remota de comandos em um servidor através de uma conexão TCP.
+This is a C-based backdoor client that allows remote execution of commands on a server through a TCP connection.
 
-## Descrição
+## Description
 
-O Backdoor utiliza a API do Windows Socket (Winsock) para estabelecer uma conexão TCP com um servidor remoto e executa o comando `cmd.exe` no servidor. Ele também aplica uma operação XOR nos dados antes de enviá-los para ofuscar a comunicação.
+The backdoor uses the Windows Socket (Winsock) API to establish a TCP connection with a remote server and executes the `cmd.exe` command on the server. It also applies an XOR operation on the data before sending it to obfuscate communication.
 
-## Funcionalidades Principais
+## Key Features
 
-- Estabelecimento de conexão TCP com um servidor remoto.
-- Execução do comando `cmd.exe` no servidor remoto.
-- Aplicação de uma operação XOR nos dados para ofuscar a comunicação.
+- Establish TCP connection with a remote server.
+- Execution of the `cmd.exe` command on the remote server.
+- Application of an XOR operation on the data to obfuscate communication.
 
-## Requisitos
+## Requirements
 
-- Sistema operacional Windows.
-- Compilador C compatível com o ambiente Windows (por exemplo, MinGW).
-- Biblioteca Winsock (já incluída no Windows).
+- Windows operating system.
+- C compiler compatible with the Windows environment (e.g., MinGW).
+- Winsock library (already included in Windows).
 
-## Compilação e Execução
+## Compilation and Execution
 
-Para compilar o programa, você pode usar um compilador C compatível com o ambiente Windows, como o MinGW. Certifique-se de incluir a opção `-lws2_32` para vincular a biblioteca Winsock.
+To compile the program, you can use a C compiler compatible with the Windows environment, such as MinGW. Make sure to include the `-lws2_32` option to link the Winsock library.
 
-## Demonstração:
+## Demonstration:
 
 ![EDR_C](https://github.com/daniel-de-lima0xa/bypassAV/assets/59209081/2a1f1034-31ba-4106-a5a5-8b91783a10bd)
 
 ```sh
 gcc -o remote_command_client remote_command_client.c -lws2_32
-Em seguida, execute o programa:
-
-
-
-
+Then, execute the program:
